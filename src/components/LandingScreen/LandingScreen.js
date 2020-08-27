@@ -94,24 +94,23 @@ const Stars = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   overflow: hidden;
-  animation: ${ spinscale } 4s linear infinite alternate;
+  animation: ${spinscale} 4s linear infinite alternate;
 `;
 
-const LandingScreen = props => {
+const LandingScreen = (props) => {
   const history = useHistory();
 
   const music = new UIfx(kahootMusic);
-  music.play(0.5); 
+  music.play(0.5);
 
   const startGame = () => {
-   history.push("/game")
+    history.push("/game");
   };
 
   return (
-    
     <Container>
-      <Title>reduce, reuse,</Title>
-      <TitleBig>recycle!</TitleBig>
+      <Title>Recicla con Susana</Title>
+      <TitleBig>Recicla</TitleBig>
 
       <Octopus>
         <SpaceOctopus />
@@ -129,7 +128,7 @@ const LandingScreen = props => {
         handleClick={startGame}
         label="Let's Play!"
       ></Button>
-     
+
       <ButtonContainer>
         {props.howToPlayModal && (
           <HowToPlayModal
@@ -151,8 +150,6 @@ const LandingScreen = props => {
         ></Button>
       </ButtonContainer>
     </Container>
-   
-    
   );
 };
 
