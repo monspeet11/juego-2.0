@@ -110,7 +110,7 @@ const LandingScreen = (props) => {
   return (
     <Container>
       <Title>Recicla con Susana</Title>
-      <TitleBig>Recicla</TitleBig>
+      <TitleBig>¡Listo para Reciclas!</TitleBig>
 
       <Octopus>
         <SpaceOctopus />
