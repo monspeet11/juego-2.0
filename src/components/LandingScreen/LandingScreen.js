@@ -146,7 +146,7 @@ const LandingScreen = (props) => {
         <Button
           type="button"
           handleClick={props.showFunFactsModal}
-          label="Hechos Graciosos"
+          label="Hechos Importantes"
         ></Button>
       </ButtonContainer>
     </Container>

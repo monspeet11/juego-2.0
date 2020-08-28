@@ -76,8 +76,8 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <BlackBin width="20%" height="70%" />
             <BoxMessage>
-              Drag and drop items that{" "}
-              <OrangeText>CANNOT BE RECYCLED</OrangeText> into this bin
+              Arrastra y suelta elementos que {""}
+              <OrangeText> NO SE PUEDE RECICLAR </OrangeText> en este contenedor
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
@@ -85,8 +85,9 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <CompostBin width="20%" height="70%" />
             <BoxMessage>
-              Drag and drop items that are <OrangeText>FOOD WASTE</OrangeText>{" "}
-              into this bin
+              Arrastre y suelte elementos que sean{" "}
+              <OrangeText> RESIDUOS DE ALIMENTOS </OrangeText> {""}
+              en esta papelera
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
@@ -94,8 +95,8 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <Heart width="20%" />
             <BoxMessage>
-              These are your <OrangeText>LIVES</OrangeText>. If you put the item
-              in the wrong bin you lose a life
+              Estas son sus <OrangeText> VIDAS </OrangeText>. Si pones el
+              artículo en el cubo equivocado pierdes una vida
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
@@ -103,8 +104,8 @@ const HowToPlayModal = ({ handleClose }) => {
           <BadgeBox>
             <StarFish width="20%" />
             <BoxMessage>
-              If you put an item in the right bin you get a{" "}
-              <OrangeText>STARFISH POINT</OrangeText>!
+              Si pones un artículo en el contenedor correcto, obtienes un {""}
+              <OrangeText> PUNTO DE ESTRELLA DE MAR </OrangeText>!
             </BoxMessage>
           </BadgeBox>
         </MessageBox>
