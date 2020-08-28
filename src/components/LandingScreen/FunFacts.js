@@ -91,20 +91,23 @@ const FunFactsModal = ({ handleClose }) => {
           </p>
 
           <FactList>
-            <li>When you’re shopping, only buy what you need.</li>
-            <li>Can you shop at a zero-waste grocery store?</li>
-            <li>
-              Try to walk more instead of using the car. Your parents will use
-              less petrol!
-            </li>
+            <li> Cuando esté comprando, compre solo lo que necesita. </li>
             <li>
               {" "}
-              Turn off the tap when brushing your teeth and you'll waste less
-              water
+              ¿Puede comprar en una tienda de comestibles sin desperdicio?{" "}
             </li>
             <li>
-              Switch off the TV, games console, and electrical items to reduce
-              your energy use
+              Trate de caminar más en lugar de usar el automóvil. Tus padres
+              usarán menos gasolina!
+            </li>
+            <li>
+              {""}
+              Cierre el grifo cuando se cepille los dientes y desperdiciará
+              menos agua
+            </li>
+            <li>
+              Apague el televisor, la consola de juegos y los elementos
+              eléctricos para reducir tu uso de energía
             </li>
           </FactList>
 
@@ -119,25 +122,25 @@ const FunFactsModal = ({ handleClose }) => {
       <MessageBox primary>
         <BoxMessage>
           <p>
-            <OrangeText>REUSE</OrangeText>
+            <OrangeText>REUTILIZAR</OrangeText>
           </p>
 
           <FactList>
             <li>
-              Take a reusable bag for life or old carrier bag with you when
-              heading to the shops
+              Lleve consigo una bolsa reutilizable de por vida o una bolsa vieja
+              cuando yendo a las tiendas
             </li>
             <li>
-              When something is broken, see if you can mend it instead of
-              throwing it away
+              Cuando algo se rompe, vea si puede repararlo en lugar de tirarlo a
+              la basura
             </li>
             <li>
-              If it can’t be mended, see if you can find a new use for it!
+              Si no se puede reparar, ¡vea si puede encontrarle un nuevo uso!
             </li>
-            <li>Give unwanted items to charity</li>
+            <li> Dar artículos no deseados a organizaciones benéficas </li>
             <li>
-              Reuse scrap paper – you can always use both sides of a sheet of
-              paper to draw on!
+              Reutilice el papel de desecho: siempre puede usar ambos lados de
+              una hoja de papel para dibujar!
             </li>
           </FactList>
 
@@ -152,22 +155,23 @@ const FunFactsModal = ({ handleClose }) => {
       <MessageBox primary>
         <BoxMessage>
           <p>
-            <OrangeText>RECYCLE</OrangeText>
+            <OrangeText>RECICLAR</OrangeText>
           </p>
 
           <FactList>
             <li>
-              Always see if you can buy things made from recycled materials
+              Siempre vea si puede comprar cosas hechas con materiales
+              reciclados.
             </li>
             <li>
-              Sort all your rubbish so that the glass, tin cans, plastic and
-              paper can be recycled
+              Clasifique toda su basura para que el vidrio, latas, plástico y el
+              papel se puede reciclar
             </li>
             <li>
-              Think about what other things can be recycled at your local
-              recycling centre, like batteries, ink cartridges and clothes
+              Piense en qué otras cosas se pueden reciclar en su local. centro
+              de reciclaje, como baterías, cartuchos de tinta y ropa
             </li>
-            <li>Use kitchen waste to make compost for the garden</li>
+            <li> Use desechos de la cocina para hacer abono para el jardín </li>
           </FactList>
 
           <Flexy>
@@ -180,10 +184,10 @@ const FunFactsModal = ({ handleClose }) => {
 
       <MessageBox primary>
         <BoxMessage>
-          Discover more about how to recycle in your local area and reduce waste
-          by visiting{" "}
+          Descubra más sobre cómo reciclar en su área local y reducir los
+          desechos visitando{" "}
           <ExtLink href="https://www.recyclenow.com/" target="blank">
-            Recycle Now
+            Reciclar ahora
           </ExtLink>
           .
         </BoxMessage>

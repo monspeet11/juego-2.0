@@ -110,7 +110,7 @@ const LandingScreen = (props) => {
   return (
     <Container>
       <Title>Recicla con Susana</Title>
-      <TitleBig>¡Listo para Reciclas!</TitleBig>
+      <TitleBig>¡Listo para Reciclar!</TitleBig>
 
       <Octopus>
         <SpaceOctopus />
@@ -126,7 +126,7 @@ const LandingScreen = (props) => {
         type="button"
         renderAs="button"
         handleClick={startGame}
-        label="Let's Play!"
+        label="Jugar!"
       ></Button>
 
       <ButtonContainer>
@@ -141,12 +141,12 @@ const LandingScreen = (props) => {
         <Button
           type="button"
           handleClick={props.showHowToPlayModal}
-          label="How To Play"
+          label="Como Jugar"
         ></Button>
         <Button
           type="button"
           handleClick={props.showFunFactsModal}
-          label="Fun Facts"
+          label="Hechos Graciosos"
         ></Button>
       </ButtonContainer>
     </Container>

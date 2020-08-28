@@ -41,7 +41,7 @@ const OptionsListItem = styled.li`
   line-height: 2;
 `;
 
-const OptionsModal = props => {
+const OptionsModal = (props) => {
   const hideOptionsModal = () => {
     props.setOptionsModal(!props.optionsModal);
   };
@@ -56,11 +56,17 @@ const OptionsModal = props => {
 
   return (
     <OptionsBox>
-      <PlayIcon onClick={hideOptionsModal} cursor="pointer"/>
+      <PlayIcon onClick={hideOptionsModal} cursor="pointer" />
       <OptionsList>
-        <OptionsListItem onClick={props.showHowToPlayModal} cursor="pointer">How to play</OptionsListItem>
-        <OptionsListItem onClick={props.showFunFactsModal}  cursor="pointer">Recycling Information</OptionsListItem>
-        <OptionsListItem onClick={quitGame}  cursor="pointer">Quit</OptionsListItem>
+        <OptionsListItem onClick={props.showHowToPlayModal} cursor="pointer">
+          How to play
+        </OptionsListItem>
+        <OptionsListItem onClick={props.showFunFactsModal} cursor="pointer">
+          Información de reciclaje
+        </OptionsListItem>
+        <OptionsListItem onClick={quitGame} cursor="pointer">
+          Quitar
+        </OptionsListItem>
       </OptionsList>
     </OptionsBox>
   );

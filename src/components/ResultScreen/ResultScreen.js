@@ -14,7 +14,7 @@ import {
   BadgeBox,
   BoxMessage,
   MessageImage,
-  PageHeader
+  PageHeader,
 } from "../MasterCss";
 
 const ButtonContainer = styled.div`
@@ -27,12 +27,12 @@ const ButtonContainer = styled.div`
   padding-bottom: 25px;
 `;
 
-const ResultScreen = props => {
+const ResultScreen = (props) => {
   const [badgeGiven, setBadgeGiven] = React.useState(0);
 
   React.useEffect(() => {
     if (props.count === 1) {
-      setBadgeGiven(4)
+      setBadgeGiven(4);
     } else if (props.count >= 5 && props.count < 11) {
       setBadgeGiven(1);
     } else if (props.count >= 10 && props.count < 16) {
@@ -52,7 +52,7 @@ const ResultScreen = props => {
 
   return (
     <Container>
-      <PageHeader>nice one!</PageHeader>
+      <PageHeader>Buena esa!</PageHeader>
       <ProgressScore results count={props.count} />
       <BadgeBox>
         {" "}
@@ -61,7 +61,10 @@ const ResultScreen = props => {
           alt="An animal badge to say well done!"
         />
         <MessageBox results>
-          <BoxMessage>{props.count}{badges[badgeGiven].message}</BoxMessage>
+          <BoxMessage>
+            {props.count}
+            {badges[badgeGiven].message}
+          </BoxMessage>
         </MessageBox>
       </BadgeBox>
       <ButtonContainer>

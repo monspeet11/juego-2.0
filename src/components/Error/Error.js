@@ -38,7 +38,7 @@ const Stars = styled(StarsSvg)`
   z-index: 0;
 `;
 
-const Error = props => {
+const Error = (props) => {
   const history = useHistory();
 
   const goHome = () => {
@@ -48,10 +48,10 @@ const Error = props => {
   return (
     <Container>
       <ModalHeader>error: 404</ModalHeader>
-      <ModalHeader>You're out in space!</ModalHeader>
+      <ModalHeader>¡Estás en el espacio!</ModalHeader>
       <Octopus />
       <Stars />
-      <Button primary handleClick={goHome} label={"Back to Earth"} />
+      <Button primary handleClick={goHome} label={"Volver a la tierra"} />
     </Container>
   );
 };

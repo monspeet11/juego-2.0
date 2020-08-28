@@ -20,9 +20,9 @@ const SuccessBox = styled.div`
   padding: 0px;
 `;
 
-const SuccessModal = props => {
-  const successUIFX = new UIfx(successSound)
-  successUIFX.play()
+const SuccessModal = (props) => {
+  const successUIFX = new UIfx(successSound);
+  successUIFX.play();
   const hideModal = () => {
     props.setSuccessModal(!props.successModal);
 
@@ -39,15 +39,14 @@ const SuccessModal = props => {
 
   return (
     <SuccessBox id="success" onClick={hideModal}>
-      <SC.ModalHeader>Well Done!</SC.ModalHeader>
+      <SC.ModalHeader>¡Bien hecho!</SC.ModalHeader>
       <SC.ModalHeader>
-        {props.item.name} go in the {props.item.bin} bin.
+        {props.item.name} entrar en el{props.item.bin} bin.
       </SC.ModalHeader>
       <SC.BadgeBox>
-        
         <SC.MessageBox>
-        <SC.MessageImage alt={props.item.name} src={props.item.src} />
-        <SC.BoxMessage>{props.item.fact}</SC.BoxMessage>
+          <SC.MessageImage alt={props.item.name} src={props.item.src} />
+          <SC.BoxMessage>{props.item.fact}</SC.BoxMessage>
         </SC.MessageBox>
       </SC.BadgeBox>
       <Button primary handleClick={handleModal} label="OK" />

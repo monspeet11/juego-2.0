@@ -21,9 +21,9 @@ const FailBox = styled.div`
   padding: 0px;
 `;
 
-const FailModal = props => {
-  const errorUIFX = new UIfx(errorSound)
-  errorUIFX.play()
+const FailModal = (props) => {
+  const errorUIFX = new UIfx(errorSound);
+  errorUIFX.play();
   const hideModal = () => {
     props.setFailModal(!props.failModal);
 
@@ -42,19 +42,16 @@ const FailModal = props => {
     }
   };
 
-  
-
   return (
     <FailBox id="fail" onClick={hideModal}>
-      
       <SC.ModalHeader>Uh Oh!</SC.ModalHeader>
       <SC.ModalHeader>
-        {props.item.name} go in the {props.item.bin} bin.
+        {props.item.name} entrar en el {props.item.bin} bin.
       </SC.ModalHeader>
       <SC.BadgeBox>
         <SC.MessageBox>
-        <SC.MessageImage alt={props.item.name} src={props.item.src} />
-        <SC.BoxMessage>{props.item.fact}</SC.BoxMessage>
+          <SC.MessageImage alt={props.item.name} src={props.item.src} />
+          <SC.BoxMessage>{props.item.fact}</SC.BoxMessage>
         </SC.MessageBox>
       </SC.BadgeBox>
       <Button primary handleClick={handleModal} label="OK" />
